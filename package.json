@@ -1,0 +1,39 @@
+{
+  "name": "streamermode",
+  "displayName": "streamermode",
+  "description": "",
+  "publisher": "purpl",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.31.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "main": "./src/extension.js",
+  "contributes": {
+    "grammars": [
+      {
+        "injectTo": [
+          "source.js",
+          "source.js.jsx",
+          "source.jsx",
+          "source.ts",
+          "source.tsx",
+          "text.html.basic"
+        ],
+        "scopeName": "inline.streamermode",
+        "path": "./syntaxes/streamermode.json"
+      }
+    ]
+  },
+  "activationEvents": [
+    "onLanguage:javascript",
+    "onLanguage:javascriptreact",
+    "onLanguage:typescript",
+    "onLanguage:typescriptreact"
+  ],
+  "dependencies": {
+    "ps-node": "^0.1.6"
+  }
+}
